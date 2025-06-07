@@ -17,7 +17,7 @@ const Navbar = ({setShowLogin}) => {
     localStorage.removeItem("token")//we have to remove the token from localstorage, provide key name which will be token
     setToken("")//from token state we will remove token
     navigate("/")//after user logs out we will send them to home page, pass path of home page
-    toast.success("Logged out successfully!")
+    toast.success("User logged out successfully!")
   }
 
   return (
