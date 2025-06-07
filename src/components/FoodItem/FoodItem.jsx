@@ -21,7 +21,7 @@ const FoodItem = ({id,name,price,description,image}) => {
               ? <img onClick={()=>addToCart(id,toast.success("Food item added to cart"))} className='add' src={assets.add_icon_white} alt=''/>
               :<div className='food-item-counter'>
               {/* adding remove from cart function from context api which takes in an id */}
-                <img onClick={()=>removeFromCart(id,toast.success("Food item removed to cart"))} src={assets.remove_icon_red} alt="" />
+                <img onClick={()=>removeFromCart(id,toast.success("Food item removed from cart"))} src={assets.remove_icon_red} alt="" />
                 <p>{cartItems[id]}</p>
                 <img onClick={()=>addToCart(id)} src={assets.add_icon_green} alt="" />
               </div>
