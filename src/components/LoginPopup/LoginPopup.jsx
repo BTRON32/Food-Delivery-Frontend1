@@ -48,7 +48,7 @@ const LoginPopup = ({setShowLogin}) => {
       setToken(response.data.token)//it means we are logged in/register, we will get one tokem, to save token we will use state variable, token from context api, we will save token using setToken function
       localStorage.setItem("token",response.data.token)//we will store token in local storage, key name is token and in value we will add res.data.token, after this we will be successfully logged in  
       setShowLogin(false)//it will hide login page
-      toast.success("Logged in successfully!")
+      toast.success("User logged in successfully!")
     }
     else{//when response data.success will be false
       
