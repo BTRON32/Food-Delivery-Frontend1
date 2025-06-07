@@ -38,7 +38,7 @@ const Cart = () => {
                 {/* display total price=item price * number of quantity */}
                 <p>${item.price * cartItems[item._id]}</p>
                 {/* remove From Cart function is from useContext */}
-                <p onClick={()=>removeFromCart(item._id,toast.success("Food item added to cart"))} className='cross'>x</p>
+                <p onClick={()=>removeFromCart(item._id,toast.success("Food item removed from cart"))} className='cross'>x</p>
               </div>
               <hr />
             </div>
